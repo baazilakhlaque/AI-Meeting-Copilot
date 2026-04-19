@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ── Warm Sage & Terracotta theme ── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Primary accent: terracotta/coral */
+  --color-terra:       #e07a5f;
+  --color-terra-dark:  #c9633f;
+  --color-terra-light: #f3c4b4;
+  --color-terra-muted: #f8ede8;
+
+  /* Secondary accent: sage green (headers, timestamps, focus) */
+  --color-sage:        #6b8f71;
+  --color-sage-dark:   #50724f;
+  --color-sage-light:  #a8c5aa;
+  --color-sage-muted:  #eaf2eb;
+
+  /* Neutral warm palette */
+  --color-cream:       #fdf9f3;   /* left + right panel body */
+  --color-cream-mid:   #f5f0e8;   /* middle panel body */
+  --color-cream-card:  #fffcf7;   /* suggestion cards */
+  --color-warm-nav:    #faf7f2;   /* top nav bar */
+  --color-warm-border: #e3d9cc;   /* panel / card borders */
+  --color-warm-divide: #ece5d9;   /* dividers inside panels */
+  --color-charcoal:    #2d2d2d;   /* primary text */
+  --color-taupe:       #8a7e72;   /* secondary / muted text */
+
+  /* Type-badge accent colours (earthy, muted) */
+  --color-badge-teal:   #5c8f7a;
+  --color-badge-amber:  #c49a3c;
+  --color-badge-rose:   #b5636a;
+  --color-badge-purple: #7c6f9e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
