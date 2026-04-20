@@ -4,6 +4,8 @@ A real-time AI meeting copilot that listens to live audio, continuously surfaces
 
 I plan on converting this into an extension later on (will update here!)
 
+Deployed Link: https://ai-meeting-copilot-lac.vercel.app/
+
 ## Setup
 
 ### Prerequisites
